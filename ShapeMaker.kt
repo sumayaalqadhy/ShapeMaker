@@ -6,7 +6,11 @@ fun main() {
   // Write your code below
   for (i in 1..sqSide) {
     for (j in 1..sqSide ) {
-      print(sqChar1)
+      if ((i % 2 == 0 && j % 2 == 0) || i % 2 == 1 && j % 2 ==1) {
+        print(sqChar1)
+      } else {
+        print(sqChar2)
+      }
     }
     println()
   }
